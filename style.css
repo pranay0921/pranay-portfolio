@@ -5,9 +5,29 @@
     box-sizing: border-box;
 }
 
+
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 82px;
+    scrollbar-width: thin;
+    scrollbar-color: #3B8F68 #101414;
+}
+
+/* Chrome, Edge, and Safari */
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background: #101414;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #3B8F68;
+    border: 2px solid #101414;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #65D6A1;
 }
 
 body {
